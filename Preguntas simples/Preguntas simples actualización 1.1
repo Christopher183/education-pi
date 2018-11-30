@@ -1,0 +1,192 @@
+#Aqui comienza lo que se va a desarrollar.
+import os
+print ("Por favor ingresa tu nombre:");
+name=str(raw_input(""));
+os.system("cls");
+print("Bienvenido"),name;
+print ("        Selecciona que deseas hacer:");
+print ("");
+print ("1. Numeros.");
+print ("");
+print ("2. Animales.");
+print ("");
+print ("3. Objetos");
+print ("");
+print ("                                                 4. Salir.");
+print ("");
+op= int(raw_input(""));#variable de lectura de la opcion que el usuario ingresara
+os.system('cls');
+       
+while op <> 1 and op <> 2 and op <>3 and op<>4: #ciclo bucle para por si el usuario ingresa una opcion invalida.
+    os.system('cls')
+    print ("Bienvenido");
+    print ("");
+    print ("        Selecciona que deseas hacer:");
+    print ("");
+    print ("1. Numeros.");
+    print ("");
+    print ("2. Animales.");
+    print ("");
+    print ("3. Objetos");
+    print ("");
+    print ("                                                 4. Salir.");
+    print ("");
+    op= int(raw_input(""));
+
+
+if op == 1: #Comienza el primer programa
+   os.system('cls')
+   print("");
+   print ("                 Resuelve lo siguiente:");
+   print ("¿Cuanto es 2+2:?");#primera pregunta
+   print ("");
+   print ("");
+   print ("1. 4");
+   print ("2. 8 ");
+   print ("3. 22 ");
+   opc=int(raw_input(""));#variable de lectura 
+   while opc <>1:#ciclo de repeticon
+       print (""),name,("recuerda que la suma no equivale a eso. Tu puedes! ");
+       opc=int(raw_input(""));
+   
+   if opc==1:#respuesta a las opciones del usuario
+       print (""),name,("Correcto la respuesta es 2. ");
+   os.system('cls');
+
+   print ("¿Cuanto es 10-5? ");#segunda pregunta
+   print("");
+   print("1. 8 ");
+   print("2. 4 ");
+   print("3. 5 ");
+   opc=int(raw_input(""));#lectura
+   while opc <>3:
+       print (""),name,("recuerda que la resta no equivale a eso. Tu puedes! ");
+       opc=int(raw_input(""));
+
+
+   if opc ==3:#respuesta correcta
+       print(""),name,("Excelente la resta de 10-5 es 5");      
+   os.system('cls');
+
+
+   print (" cuanto es 20+20");#pregunta 3
+   print ("");
+   print ("1. 50  ");
+   print ("2. 40");
+   print ("3. 200 ");
+   opc = int(raw_input(""));#lectura
+   while opc <> 2:
+      print (""),name,("recuerda que la suma no equivale a eso. Tu puedes! ");
+      opc = int(raw_input(""));
+   
+   if opc==2: #respuesta correcta
+       print (""),name, ( "Eres un genio, claro que 20+20 es 40");
+   os.system('cls');
+
+if op==2:#comienza el segundo programa.
+    print ("Indica el animal que sigue:");
+    print ("");
+    print ("");
+    print ("Cual animal es el que sigue: ");#primer ejercio
+    print ("Perro,Gato,Zorro...");
+    print ("");
+    print ("1. Tortuga. ");
+    print ("2. Raton. ");
+    print ("3. Aguila. ");
+    opc=int(raw_input(""));#lectura
+    while opc<>2:
+            print(""),name,("el animal que sigue no es ese, yo se que tu sabes cual sigue.");
+            opc=int(raw_input(""));
+
+    if opc==2:#respuesta correcta.
+        print (""),name,("Exacto es el animal que sigue.");
+    os.system('cls');
+ 
+    print ("Cual animal es el que sigue: ");
+    print ("Gaviota,Tucan,Paloma...");
+    print ("");
+    print ("1. Erizo. ");
+    print ("2. Ballena. ");
+    print ("3. Aguila. ");
+    opc=int(raw_input(""));
+    while opc<>3:
+            print(""),name,("el animal que sigue no es ese, yo se que tu sabes cual sigue.");
+            opc=int(raw_input(""));
+    
+    if opc==3:
+        print (""),name,("Exacto es el animal que sigue.");
+    os.system('cls');
+
+    print ("Cual animal es el que sigue: ");#segundo ejercicio
+    print ("Tortuga,Pescado,Tiburon...");
+    print ("");
+    print ("1. Cangrejo. ");
+    print ("2. Oso. ");
+    print ("3. Aguila. ");
+    opc=int(raw_input(""));#lectura
+    while opc<>1:
+            print(""),name,("el animal que sigue no es ese, yo se que tu sabes cual sigue.");
+            opc=int(raw_input(""));
+    
+    if opc==1:#respuesta correcta.
+        print (""),name,("Exacto es el animal que sigue.");
+    os.system('cls');   
+
+if op==3:#comienza el tercer programa
+    print("Trata de resolver los iguiente:");
+    print("");
+    print("");
+    print("Selecciona la figura que corresponda");#primer ejercicio
+    print("");
+    print("La pelota que forma tiene:");
+    print("");
+    print("1. Circulo.");
+    print("2. Triangulo.");
+    print("3. Cuadrado.");
+    opc=int(raw_input(""));#lectura
+    while opc<>1:
+        print(""),name,("mira bien la forma que tiene. ¡Ánimo!.");
+        opc=int(raw_input(""));
+        
+    if op==1:#respuesta correcta
+        print(""),name,("Por supuesto que esa es la forma.");
+    op.system('cls');
+
+
+    print("Selecciona la figura que corresponda");#segundo ejercicio
+    print("");
+    print("La pizza que forma tiene:");
+    print("");
+    print("1. Circulo.");
+    print("2. Triangulo.");
+    print("3. Cuadrado.");
+    opc=int(raw_input(""));#lectura
+    while opc<>2:
+        print(""),name,("mira bien la forma que tiene. ¡Ánimo!.");
+        opc=int(raw_input(""));
+        
+    if op==2:#respuesta correcta
+        print (""),name,("Por supuesto que esa es la forma.");
+    op.system('cls');
+    
+    print("Selecciona la figura que corresponda");#tercer ejercicio
+    print("");
+    print("El celular que forma tiene:");
+    print("");
+    print("1. Circulo.");
+    print("2. Triangulo.");
+    print("3. Rectangular.");
+    opc=int(raw_input(""));#lectura
+    while opc<>3:
+        print(""),name,("mira bien la forma que tiene. ¡Ánimo!.");
+        opc=int(raw_input(""));
+        
+    if op==3:#respuesta correcta
+        print(""),name,("Por supuesto que esa es la forma.");
+    op.system('cls');  
+       
+if op==4:#opcion de finalizar el programa.
+    print (""),name,("Gracias por jugar  (:3) .");
+    
+    
+    
