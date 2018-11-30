@@ -1,0 +1,352 @@
+import javax.swing.*;
+import java.awt.event.*;
+
+public class Interfaz_6 extends JFrame implements ActionListener{
+  private JButton boton1, boton2, boton3, boton4, boton5;
+  private JLabel label1, label2, label3, label4, label5, label6, label7, label8, label9, label10, label11, label12, label13, label14, label15, label16, label17, label18, label19, label20, label21, label22, label23, label24, label25, label26, label27, label28, label29, label30, label31, label32, label33, label34,label35,label36;
+  
+  public Interfaz_6(){
+  setLayout(null);
+  setDefaultCloseOperation(EXIT_ON_CLOSE);
+  boton1 = new JButton("Sumar");
+  boton1.setBounds(30,50,180,30);
+  add(boton1);
+  boton1.addActionListener(this);
+
+  boton2 = new JButton("Restar");
+  boton2.setBounds(270,50,180,30);
+  add(boton2);
+  boton2.addActionListener(this);
+
+  boton3 = new JButton("Multiplicar");
+  boton3.setBounds(30,100,180,30);
+  add(boton3);
+  boton3.addActionListener(this);
+
+  boton4 = new JButton("Dividir");
+  boton4.setBounds(270,100,180,30);
+  add(boton4);
+  boton4.addActionListener(this);
+
+  boton5 = new JButton("Salir");
+  boton5.setBounds(300,450,180,30);
+  add(boton5);
+  boton5.addActionListener(this);
+
+  label1 = new JLabel("En espera...");
+  label1.setBounds(10,10,300,30);
+  add(label1);
+ 
+  label2 = new JLabel("");
+  label2.setBounds(220,130,400,100);
+  add(label2);  
+
+  label3 = new JLabel("");
+  label3.setBounds(10,150,600,100);
+  add(label3);  
+
+  label4 = new JLabel("");
+  label4.setBounds(10,165,600,100);
+  add(label4);  
+
+  label5 = new JLabel("");
+  label5.setBounds(10,200,600,100);
+  add(label5);  
+
+  label6 = new JLabel("");
+  label6.setBounds(25,225,600,100);
+  add(label6);
+
+  label7 = new JLabel("");
+  label7.setBounds(10,230,600,100);
+  add(label7);
+
+  label8 = new JLabel("");
+  label8.setBounds(32,240,600,100);
+  add(label8);
+  
+  label9 = new JLabel("");
+  label9.setBounds(10,240,600,100);
+  add(label9);
+
+  label10 = new JLabel("");
+  label10.setBounds(25,253,600,100);
+  add(label10);
+
+  label11 = new JLabel("");
+  label11.setBounds(40,225,600,100);
+  add(label11);
+  
+  label12 = new JLabel("");
+  label12.setBounds(40,240,600,100);
+  add(label12);
+
+  label13 = new JLabel("");
+  label13.setBounds(40,253,600,100);
+  add(label13);
+
+  label14 = new JLabel("");
+  label14.setBounds(90,227,600,100);
+  add(label14);
+
+  label15 = new JLabel("");
+  label15.setBounds(90,242,600,100);
+  add(label15);
+
+  label16 = new JLabel("");
+  label16.setBounds(90,255,600,100);
+  add(label16);
+
+  label17 = new JLabel("");
+  label17.setBounds(80,227,600,100);
+  add(label17);
+
+  label18 = new JLabel("");
+  label18.setBounds(80,242,600,100);
+  add(label18);
+
+  label19 = new JLabel("");
+  label19.setBounds(80,255,600,100);
+  add(label19);
+
+  label20 = new JLabel("");
+  label20.setBounds(31,253,600,100);
+  add(label20);
+
+  label21 = new JLabel("");
+  label21.setBounds(32,225,600,100);
+  add(label21);
+
+  label22 = new JLabel("");
+  label22.setBounds(25,256,600,100);
+  add(label22);
+
+  label23 = new JLabel("");
+  label23.setBounds(250,240,600,100);
+  add(label23);
+
+  label24 = new JLabel("");
+  label24.setBounds(32,240,600,100);
+  add(label24);
+
+  label25 = new JLabel("");
+  label25.setBounds(64,270,600,100);
+  add(label25);
+
+  label26 = new JLabel("");
+  label26.setBounds(32,285,600,100);
+  add(label26);
+
+  label27 = new JLabel("");
+  label27.setBounds(60,255,600,100);
+  add(label27);
+
+  label28 = new JLabel("");
+  label28.setBounds(60,255,600,100);
+  add(label28);
+
+  label29 = new JLabel("");
+  label29.setBounds(64,256,600,100);
+  add(label29);
+
+  label30 = new JLabel("");
+  label30.setBounds(18,270,600,100);
+  add(label30);
+
+  label31 = new JLabel("");
+  label31.setBounds(14,271,600,100);
+  add(label31);
+
+  label32 = new JLabel("");
+  label32.setBounds(223,255,600,100);
+  add(label32);
+
+  label33 = new JLabel("");
+  label33.setBounds(320,255,600,100);
+  add(label33);
+
+  label34 = new JLabel("");
+  label34.setBounds(320,275,600,100);
+  add(label34);
+
+  label35 = new JLabel("");
+  label35.setBounds(320,295,600,100);
+  add(label35);
+
+  label36 = new JLabel("");
+  label36.setBounds(320,315,600,100);
+  add(label36);
+
+  }
+
+  public void actionPerformed(ActionEvent e){
+    if(e.getSource() == boton1){
+      label1.setText("");
+      label2.setText("Suma");
+      label3.setText("La suma es una operación muy básica y sencilla, que se usa para añadir una");
+      label4.setText("cantidad a otra. La suma tiene 2 elementos: Los sumandos y la suma o total");
+      label5.setText("Ejemplo");
+      label6.setText("15");
+      label7.setText("+");
+      label8.setText("7");
+      label9.setText("_____");
+      label10.setText("22");
+      label11.setText("-----------");
+      label12.setText("-----------");
+      label13.setText("-----------");
+      label14.setText("Sumando");
+      label15.setText("Sumando");
+      label16.setText("Suma o total");
+      label17.setText(">");
+      label18.setText(">");
+      label19.setText(">");
+      label20.setText("");
+      label21.setText(""); 
+      label22.setText(""); 
+      label23.setText(""); 
+      label24.setText("");
+      label25.setText("");
+      label26.setText("");
+      label27.setText("");
+      label28.setText("");
+      label29.setText("");
+      label30.setText("");
+      label31.setText("");
+      label32.setText("");
+      label33.setText("");
+      label34.setText("");
+      label35.setText("");
+      label36.setText("");
+
+    }
+    if(e.getSource() == boton2){
+      label1.setText("");
+      label2.setText("Resta");
+      label3.setText("La resta es una operación básica de la aritmética, que se usa para");
+      label4.setText("disminuir una cantidad de otra. La resta tiene minuendo, sustraendo y diferencia");
+      label5.setText("Ejemplo");
+      label6.setText("15");
+      label7.setText("-");
+      label8.setText("7");
+      label9.setText("_____");
+      label10.setText("");
+      label11.setText("-----------");
+      label12.setText("-----------");
+      label13.setText("-----------");
+      label14.setText("Minuendo");
+      label15.setText("Sustraendo");
+      label16.setText("Diferencia");
+      label17.setText(">");
+      label18.setText(">");
+      label19.setText(">");
+      label20.setText("8");
+      label21.setText(""); 
+      label22.setText(""); 
+      label23.setText(""); 
+      label24.setText("");
+      label25.setText("");
+      label26.setText("");
+      label27.setText("");
+      label28.setText("");
+      label29.setText("");
+      label30.setText("");
+      label31.setText("");
+      label32.setText("");
+      label33.setText("");
+      label34.setText("");
+      label35.setText("");
+      label36.setText("");
+
+    }
+    if(e.getSource() == boton3){
+      label1.setText("");
+      label2.setText("Multiplicación");
+      label3.setText("La multiplicación es una forma de suma, es decir, se toma una cantidad y se");
+      label4.setText("suma un numero determinado de veces, tiene factores y productos");
+      label5.setText("Ejemplo");
+      label6.setText("");
+      label7.setText("*");
+      label8.setText("");
+      label9.setText("_____");
+      label10.setText("");
+      label11.setText("-----------");
+      label12.setText("-----------");
+      label13.setText("-----------");
+      label14.setText("Factor");
+      label15.setText("Factor");
+      label16.setText("Producto");
+      label17.setText(">");
+      label18.setText(">");
+      label19.setText(">");
+      label20.setText("");
+      label21.setText("5"); 
+      label22.setText("15"); 
+      label23.setText("5x3 = 5+5+5"); 
+      label24.setText("3");
+      label25.setText("");
+      label26.setText("");
+      label27.setText("");
+      label28.setText("");
+      label29.setText("");
+      label30.setText("");
+      label31.setText("");
+      label32.setText("");
+      label33.setText("");
+      label34.setText("");
+      label35.setText("");
+      label36.setText("");
+
+
+    }
+    if(e.getSource() == boton4){
+      label1.setText("");
+      label2.setText("División");
+      label3.setText("La división es repartir una cantidad en partes iguales. La división tiene");
+      label4.setText("4 partes: divisor, dividendo, cociente y residuo");
+      label5.setText("Ejemplo");
+      label6.setText("");
+      label7.setText("");
+      label8.setText("");
+      label9.setText("");
+      label10.setText("");
+      label11.setText("");
+      label12.setText("");
+      label13.setText("");
+      label14.setText("");
+      label15.setText("");
+      label16.setText("");
+      label17.setText("");
+      label18.setText("");
+      label19.setText("");
+      label20.setText("");
+      label21.setText(""); 
+      label22.setText("15"); 
+      label23.setText(""); 
+      label24.setText("");
+      label25.setText("5");
+      label26.setText("0");
+      label27.setText("_____________");
+      label28.setText("|");
+      label29.setText("3");
+      label30.setText("- 15");
+      label31.setText("_____");
+      label32.setText("15/3=5");
+      label33.setText("15 es el dividendo");
+      label34.setText("3 es el divisor");
+      label35.setText("5 es el cociente");
+      label36.setText("0 es el residuo");
+    }
+    if(e.getSource() == boton5){
+      System.exit(0);
+    }
+  }  
+
+  public static void main(String args[]){
+    
+    Interfaz_6 formulario1 = new Interfaz_6();
+    formulario1.setBounds(0,0,500,550);
+    formulario1.setVisible(true);
+    formulario1.setResizable(false);
+    formulario1.setLocationRelativeTo(null);
+ }
+}
